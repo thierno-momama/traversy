@@ -1,0 +1,30 @@
+Why Use Angular ?
+
+*Create dynamic frontend app & UIs
+
+*Full featured framework(router, http, etc)
+
+*Integrated TypeScript (optional)
+
+*RxJS - efficient, asynchronous, programming
+
+*Test-friendly
+
+*Popular in entreprise busnisess
+
+
+What shoud you know first ?
+
+Like with any framework, you should be comfortable with the underying language first. in this case , that is Javascript 
+
+
+*Javascript Fundamentals 
+
+*Async programming (promises)
+
+*Array methods (forEach, map, filter, etc)
+
+*Fetch API /Http Requests
+
+*NPM (Node Package Manager)
+
