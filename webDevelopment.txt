@@ -1,0 +1,419 @@
+Web Developpment Guide 
+
+Frontend vs Backend vs FullStack
+
+*Frontend Dev | Front facing website or app UI
+HTML, CSS, SASS, JAVASCRIPT, TYPESCRIPT, JS FRAMEWORKS, DOM, HTTP, ETC
+
+*Backend Dev |Server API'S, data, tasks, etc
+Many language to chosse from (JS, Python, C#, PHP, & More), Databases (Relational, NoSQL), Knowledge of servers and config, etc 
+
+*FullStack Dev | Combined frontend/backend
+Both front and back end technologies
+
+What is Your Goal (or Goals)?
+
+*Professional Dev at Company (Large or small)
+*Freelancer / Consultant /Your Own Business
+*Build Your Own Apps / SaaS
+*Content Creation
+*Just a Hobby
+
+Basic Tools
+
+*Computer & OS : MacOS, Windows, Lunix
+*Text Editor : VS code, VIM, Atom, Sublime Text 
+*Web Browser : Chrome, Firefox, Sarafi, Edge, Brave
+*Terminal : Default, Hyper, Powershell, Git Bash
+*Design Software : Adobe XD, Photoshop, Sketch, Figma
+
+HTML & CSS
+
+*HTML 5 Page Structure & Semantic Tags
+*Basic CSS Styling
+*Positioning
+*ALignment & Animation
+*Transition & Animation
+*Responsive Design / Media Queries
+
+Reference: Youtube : HTML CSS Playing, Udemy: Modern HTML & CSS From the beginning - 50 Projects In 50 Days
+
+Sass 
+
+CSS preprocessor that gives you more functionnality in your styling. Sass offers things like, mixins, functions nesting , etc.
+
+Although Sass is optional, it is something I suggest learning. It is easy to pickup and you will most likely run into it at some point
+
+Reference: Youtube: Sass Crash Course, Responsive portfolio website, Fancy From UI From Crash
+
+CSS / UI Frameworks (choose One)
+
+*Tailwind css
+*Boostrap
+*Materialize
+*Bulma
+
+Reference : Youtube: Bootstrap crash, Meterialize crash, build your first Tailwind css, Bulma crash
+
+UI Design
+
+Color, white space, scale, visual Hierarchy, Typography
+
+Reference - Youtube: UI Design For Developers
+
+*Javascript : is extremely important for frontend /fullstack web developers. It's the language of the client side
+*Basic: variables, arrays, function, loopas, etc
+*DOM & Styling : Selecting and manipulating elements
+*Arrays Methods : Foeach, map, filter, reduce, etc
+*JSON: Javascript Obejct Notation
+*HTTP Requests: Fetch API - GET, POST, PUT, DELETE
+
+Reference - Youtube: Vanilla JS playlist
+
+
+Other Tools To Start To Learn
+
+*Version Control : Git, SUbversion
+*Repo Manager : Github, Bitbucket, Gitlab
+*Package Manager: NPM, Yarn
+*Module Bundler (FE) : Parcel, Webpack, Rollup
+*Browser Developer Tools (Console, Network, Storage, Etc)
+*Editor Extensions & Helpers (Linting, Prettier, Live Server, Emmet, Snippets, etc)
+
+Reference - Youtube:  Git crash course, Getting start with open source, NPM crash course, Yarn crash course, chrome devtools crash course, emmet crash course, eslin & prettier setup
+
+
+Basic Frontend Deployment : You should be able to do a basic website or frontend app deployment
+
+*Static Hosting : : Netlify, Github Pages, Heroku
+*Cpanel Hosting : inMotion, Hostgator, Bluehost
+
+Methods of Deploying
+*Git : Continuous deployment by pushing to a repo
+*FTP / SFTP : Filte Transfert protocol (show)
+*SSH : Secure Shell (Terminal)
+
+Reference - Youtube : deploying Sites With Netlify, Build & deploy a portfolio website, build a responsive website (netlify deploy), Github pages deploy & domain, web hosting & cPanel guide
+
+Basic Frontend Deployment
+
+Some other things you will run into during a basic deployment
+
+*Domain Names : Namecheap, Google Domains, Enom
+*Email Hosting : Namecheap, Zoho Mail, Cpanel
+*SSL Certificates : Let's Encrypt, Cloudflare, Namecheap
+
+Foundational Frontend Developer:
+*Setup a productive development environment
+*Write HTML, CSS & Javascript
+*Use Sass & CSS framework (optional)
+*Create responsive layouts
+*Build websites with some dynamic functionality and work width the DOM
+*Connect to 3rd party APIs with Fetch & understand basic HTTP
+*Use Git with Github or some other Git repo (Bitbucket, etc)
+*Deploy & manage a website or small web app
+
+What Now ?
+The next step is up to you
+*Sharpen your Javascript skills
+*Learn a frontend framework (React, Vue, Angular)
+*Learn a server side language /technology (Node, Python, PHP, C#, etc)
+
+
+Frontend Framework (Choose One)
+As frontend developer , you will most likely need to be familiar with a popular frontend Javascript framework
+
+State Management
+*React : Context, Redux, MobX
+*Vue : Vuex
+*Angular : Shared Service, NgRx
+*Svelte : Context API
+
+Suggested Youtube Videos: React crash course, React project Playlist, Vue Crash Course, Angular Crash course, Redux Crash course, vuex crash course, React Context API
+
+TypeScript  : is  superset of JS and is popular on it's own as well as being paired with a FE framework
+*Brings a "strict" type system to JavaScript
+*Makes your code more robust and less pronez to errors
+*Object oriented programming (classes, interfaces, generics, modules)
+*Great for larger projects
+
+Reference - Youtube : Typescript Crash Course
+
+Testing : 
+Testing is a great thing to have in your toolkit. It helps prevent problems before they happen. This goes for all languages.
+*Unit Tests - Individual unit like functions or classes
+*Integration Test - Modules tested as group
+*End-to-End Tests - Test workflow from start to finish
+
+There are testing frameworks available for different languages. For example, Jest and Mocha for JS and PyTest and Robot for python.
+
+SUggested Youtube videos: Intro to javascript unit testing & bdd, Jest crash course, Intro to testing with Mocha & chai
+
+Server Side Rendering (Choose One)
+You can also run frameworks like React and Vue on the server.
+There are advantages to this such as better SEO, easy, routing, etc.
+*Next.js (React)
+*Nuxt.js (Vue)
+*Angular Universal (Angular)
+Sapper (Svelte)
+
+Reference - Youtube : Next crash course, Nuxt crash course, Build a Blog with Next.js & Ghost
+
+
+Static Site Generators (Choose One) : 
+SSG's generate your website pages at build - time as opposed to real-time, making them super fast & secure
+*Gatsby (React Based)
+*Gridsome (Vue Based)
+*11ty (JS alternative to Jekyll)
+*Hugo (Go Based)
+
+Refenrece - Youtube : Gatsby crash course, Build an Event app with Vue.js, Gridsome & Strapi, Buoild a website with 11ty
+
+Headless CMS (choose one)
+Backend only cotnent management system that is commonly used with static site generators
+*Strapi
+*Sanity.io
+*Contentful
+*Prismic
+*Wordpress
+
+Reference : Strapi crash course, build an event app with vue.js, Gridsome & strapi, Sanaty.io crash course,  Build a portfolio with react & Sanaty.io, Explore the wordpress REST API
+
+The Jamstack - Javascript , APIs & Markup
+Web architecture with high performance, security and scalability at a low cost with a great dev experience.
+*Static Sites / Assets
+*Markdown
+*Serverless
+*Headless CMS for Content
+*Hosting with services like Netlify
+
+Reference - Youtube : What is the JamStack ? , What is Serverless ?, Markdown crash course, Serverless Lambda Functions
+
+
+
+Frontend SuperStar : 
+*Build apps and interfaces with a frontend framework
+*Work with component and global state
+*Connect to backend JSON data integrate into youru apps
+*Write and test clean and efficient code.
+
+Optional: 
+*Use Typescript to write more robust code
+*Server side rendering
+*Static site generators /Jamstack
+
+
+Server Side Language (Pick One)
+The backend/server focuses on data, modeling and HTTP requests/responses. A server side language is needed for backend/fullstack development.
+*Node.js (Javascript)
+*Deno (Javascript)
+*Python
+*C#
+*GoLang
+*Ruby
+*PHP
+*Java
+*Kotlin
+
+Reference - Youtube : Node.JS crash course, python crash course, python OOP, PHP front To Back, Full PHP Course - 6.5 Hours, C#Project in 60 Seconds, Go Crash Course, Kotlin crash course
+Suggested Udemy Course : Node.js API Materclass, MVC PHPH OOP, Pythion Django Dev To Deployment
+
+Server Side Framework (Pick One)
+A framework is usually used in backend web development
+*NodeJS : Express, Koa, Nest, Loopback
+*Python : Django , Flask
+*PHP : Laravel, Symfony, Slim
+*C# : ASP.NET
+*Java : Spring MVC
+*Ruby : Ruby on Rails, Sinatra
+*Kotlin : Javlin, KTor
+
+Reference - Youtube : Express crash course, Laravel crash course, Django Crash course, Flash from scratch, Rails crash course
+
+Database (Pick One)
+Backend/fullstack devs work with databases and ORM/ODMs
+*PostgresSQL
+*MongoDB
+*Mysql
+*MS SQL Server
+*Firebase
+*Elasticsearch
+
+You will most loikely learn an ORM/ODM
+
+*Mongoose
+*Sequelize
+*SQLAIchemy
+*Doctrine
+*Eloquent
+
+Reference - Youtube : MonogBD crash course, Mysql crash course, Build a phooto gallery with React & Firebase, Vue.js Firebase Auth, Recipe App with Node & Postgres, Storybooks App (Node & Mongo with Mongoose)
+
+GraphQL:
+Query language for your API
+*Send a query (similar to JSON) to your API and get exactly what you need
+*Setyp a GraphQl server and query using a client like Apollo
+*Easily use with React and other frameworks
+
+Reference - Youtube : Realtime chat App - GraphQL & websockets, Full stack photobook | Vue, GraphQL, AWS Amplify, GraphQL with React & Apollo, Build a GraphQL Server
+
+
+Socket.io & Real - Time Technologies : 
+Real - Time applications are becoming more popular . Socket.io allows real-time, bidirectional communication:
+*Instant messaging & chat 
+*Real-time analytics
+*Document collaboration
+*Binary streaming
+*Much more
+
+Reference - Youtube : ChatCord Project, Real-Time chat App | React, GraphQL & websockets, Real-Time Tweets & sockets.io, Multiplayer Snake Game
+
+Wordpress Development
+Wordpress is still used, espacially in the small business world
+*Setup websites quickly
+*Give your clients complete control
+*Tons of plugins to add functionality
+*Create custom themes and plugins
+*Wordpress can be used as a headless CMS
+
+Reference - Youtube : Wordpress site in 1 Hour, Wordpress REST API
+
+
+Deployment, Servers & DevOps
+Deploying apps to production, monitoring, security, containerization / virtualization & more
+*Hosting Plateforms : Heroku, Digital Ocen, AWS, Azure
+*Web Servers : NGINX, Apache
+*Containers : DOcker / Kubzernetes, Vagrant
+*Image/video : cloudinary, S3
+*CI /CD : Jenkins, Travis CI, Circle CI
+
+Referneced - Youtube : Exploring Docker, DevOps crash course, Automatic Deployment With Github Actions, Full Node.js Deployment - NGINX, SSL with Lets ENcrypt, Full Stack Photobook | Vue , GrapQL, AWS, SAmplify
+
+
+Full Stack Developer
+*Comfortable with both building frontend UIs and servers
+*Know a server side language / technology
+*Can work with & structure databases, work with ORMs/ODMs
+*Understand HTTP & create RESTful APIs
+*Can successfully deploy full stack projects
+Very comfortable with terminal
+
+
+Mobile Development (Optional ) (Pick One)
+More and more web developers are gzetting into mobile app development with web related technologies
+*Flutter / Dart
+*React Native
+*Ionic
+*Xamarin
+*Kotlin
+*Swift
+
+Reference - Youtube : Flutter crash course, React Native crash course, Ionic Mobile Weather App, Kotlin crash Course, Build a Simple Android App With Kotlin
+
+Progrssive Web Apps (PWA)
+
+Web apps with a completetely native feel as far as experience, layout and functionality, regardless of the device
+*Build for all screen sizes 
+*Offline content /Service workers
+*HTTPS
+*Native experience (Fast, engaging, splash, screens, installable, etc...)
+Reference - Youtube : Intro To Service Workers, PWA With Vue.js
+
+Desktop Apps With Web Technologies
+There are different web-technologies than can be used to create desktop apps
+*Electron
+*NW.js
+*Python & Tkinter
+
+Reference - Youtube : An Intro To Electron, Desktop Apps With NW.js, Destop GUI with Python & Tkinter
+
+AI / Machine Learning 
+Machine learning can be useful in certain aspects of web development, espacially for python developers
+*Automation & Tools
+*Machine Learning APIs
+*Understand User Behavior / Engagement /Analytics
+*Create Code
+
+Reference - Youtube Neural Networks & Tensorflow Crash, ML.NET crash course
+
+Web Assembly:
+Efficient low-level bytecode for the web. it's an "improvement" to Javascript (it's Not a replacement for Javascript)
+*Create extremely powerful web apps (games, video/image editing, etc...)
+*Use Language like C++ & Rust to compile to WASM
+*AssemblyScript is a variable of typeScript and makes it easy to compile to Wasm without learning a new language
+
+Reference - Youtube : Rust Crash Course, C++ Crash Course
+
+Algorithms
+Algorithms may not seem productive, however they help your logic and critical thinking skills in ways you can't imagine
+*Beginner Algo Questions: FizzBuzz, string reversals, array, chunking, palindromes, anagrams, max character, etc..
+*Popular Challenge Websites: Codewars, Project Euler, Coderbyte
+
+Reference - Youtube : Javascript Cardio Series
+
+Data Structures (Primitives & Non - primitive)
+
+Organizing & managing data effectively so that we can perform specific operations efficiently
+
+*Popular Data Structures : Array, Linked List Queue, Stack, Tree, Graph, Hash Table
+
+Reference Youtube: Linked List Data Struture, Queue Data Structure
+
+
+Software Design Patterns
+
+General reusable Solutions to commonly occuring problems. SOme examples of design patterns are...
+*Singleton
+*Facade Pattern
+*Bridge/Adapter Pattern
+*Strategy Pattern
+Observer Pattern
+
+Reference - Youtube : 5 Design Patterns Every, Software Developper Should know
+
+What Now ?
+
+*Create a learning plan based on what you want to do
+*Learning the fundamentals & necessary technologies
+*Watch tutorials/courses/etc, but be sure to create your own project based on what you learn
+*Create a portfolio
+*Start applying for jobs, finding clients, etc .... 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
