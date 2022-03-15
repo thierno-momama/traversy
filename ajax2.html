@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get JSON File</title>
+</head>
+<body>
+    <button id="btnUser">Get User</button>
+    <button id="btnUsers">Get Users</button>
+    <br><br>
+    <div id="responseUser"></div>
+    <div id="responseUsers"></div>
+
+    <script>
+        //select btn
+        const btnUser = document.querySelector('#btnUser');
+        const btnUsers = document.querySelector('#btnUsers');
+        //event
+        btnUser.addEventListener('click', loadUser);
+        btnUsers.addEventListener('click', loadUsers);
+        //function load user
+        function loadUser(){
+            //xhr 
+            const xhr = new XMLHttpRequest();
+            //xhr open
+            xhr.open('GET', 'user.json', true);
+            //xhr onload
+            xhr.onload = function(){
+                //success load user
+                if(this.status === 200){
+                    let user = JSON.parse(this.responseText);
+                    let output = '';
+                    output +=   '<h1>User</h1>'+
+                                '<ul>'+
+                                    '<li>'+user.id+'</li>'+
+                                    '<li>'+user.title+'</li>'+
+                                    '<li>'+user.value+'</li>'+
+                                '</ul>';
+                    document.querySelector('#responseUser').innerHTML = output;
+                    document.querySelector('#responseUsers').innerHTML = '';
+                }else{
+                    document.querySelector('#responseUser').innerHTML = 'Not Found';
+
+                }
+            }
+            //xhr send
+            xhr.send();
+        }
+        //function load user
+        function loadUsers(){
+            //xhr 
+            const xhr = new XMLHttpRequest();
+            //xhr open
+            xhr.open('GET', 'users.json', true);
+            //xhr onload
+            xhr.onload = function(){
+                //success load user
+                if(this.status === 200){
+                    let users = JSON.parse(this.responseText);
+                    let output = '<h1>Users</h1>';
+                    for(let i in users){
+                        output +=   '<ul>'+
+                                        '<li>'+users[i].id+'</li>'+
+                                        '<li>'+users[i].title+'</li>'+
+                                        '<li>'+users[i].value+'</li>'+
+                                    '</ul>';
+                    }
+                    document.querySelector('#responseUsers').innerHTML = output;
+                    document.querySelector('#responseUser').innerHTML = '';
+                }else{
+                    document.querySelector('#responseUsers').innerHTML = 'Not Found';
+
+                }
+            }
+            //xhr send
+            xhr.send();
+        }
+    </script>
+</body>
+</html>

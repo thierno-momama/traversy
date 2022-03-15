@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP READ BDD</title>
+</head>
+<body>
+    <button id="btn">Read in bdd </button>
+    <br><br><br>
+    <div id="responseDiv"></div>
+    <script>
+        //select
+        const btn = document.querySelector("#btn");
+        //event
+        btn.addEventListener('click', onClick);
+        //onSubmit
+        function onClick(){
+            //xhr 
+            const xhr = new XMLHttpRequest();
+            //xhr open
+            xhr.open('GET', 'read.php', true);
+            //xhr onload
+            xhr.onload = function(){
+                if(this.status === 200){
+                    // document.querySelector('#response').innerHTML = (this.responseText);
+                    const names = JSON.parse(this.responseText);
+                    console.log(names);
+                    let output = '';
+                    for(let i in names){
+                        output +='<p>'+names[i].name+'</p>';
+                    }
+                    document.querySelector('#responseDiv').innerHTML = output;
+                }else{
+                    document.querySelector('#responseDiv').innerHTML = 'Not Found';
+                }
+            }
+            //xhr send
+            xhr.send();
+        }
+    </script>
+</body>
+</html>

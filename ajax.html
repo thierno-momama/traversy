@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax Load File Text</title>
+</head>
+<body>
+    <button id="btnText">Get text File</button>
+    <br><br>
+    <div id="responseText"></div>
+
+
+    <script>
+        //select btn
+        const btn = document.querySelector('#btnText');
+        //event 
+        btn.addEventListener('click', loadText);
+        //function loadText
+        function loadText(){
+            //xhr
+            const xhr = new XMLHttpRequest();
+            //xhr open
+            xhr.open('GET', 'sample.txt', true);
+            //xhr onload
+            xhr.onload = function(){
+                //if response load is true
+                if(this.status === 200){
+                    document.querySelector('#responseText').innerHTML = this.responseText;
+                }else{
+                    document.querySelector('#responseText').innerHTML = 'Not Found';
+
+                }
+            }
+            //xhr send
+            xhr.send();
+        }
+    </script>
+</body>
+</html>
