@@ -1,0 +1,45 @@
+What You will learn in this course 
+
+*Variables & Data types
+
+*Arrays
+
+*Object literals
+
+*Methods for string, array, objects, etc...
+
+*Loops - for, while, for...of, foreEach, map
+
+*Conditionals(if, ternary & witch)
+
+*Function(normal & arrow)
+
+*OOP (prototypes & classes)
+
+*DOM Selection
+
+*Events
+
+*Basic Form Validation
+
+
+Further Learning
+
+Youtube:
+
+*Javascriptv DOM Crash Course - 4 parts
+
+* JS OOP Crash Course
+
+*High Order Array Methods Video
+
+*Async JS Crash Course
+
+*Fetch API & Ajax Crash Courses
+
+*Vanilla JS Playlist (Full of small projects)
+
+*Framework crash course
+
+
+Let-s Jump in!
