@@ -1,0 +1,21 @@
+.task{
+    background-color: lightgray;
+    margin-bottom: 5px;
+    padding: 10px;
+    cursor: pointer;
+
+}
+.task h3{
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.task p{
+    font-size: .8em;
+}
+.task.reminder{
+    border-left: 3px solid green;
+}

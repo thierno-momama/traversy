@@ -1,0 +1,47 @@
+.add-form{
+    margin: 20px 0;
+}
+.form-control{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.form-control label{
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.form-control input{
+    height: 40px;
+}
+.form-control input:focus{
+    border: none;
+    outline: 1px solid green;
+}
+.form-control-check{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.form-control-check label, .form-control-check input{
+    margin: 0px 10px;
+}
+.form-control-check input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    border: none;
+}
+input[type="submit"]{
+    border: none;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    padding: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background-color: rgb(33, 33, 33);
+}
+

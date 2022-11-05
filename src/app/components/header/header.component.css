@@ -1,0 +1,11 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+header h1{
+    text-transform: uppercase;
+    font-size: 1.8em;
+    text-shadow: 3px 3px 10px #000;
+}
