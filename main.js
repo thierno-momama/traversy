@@ -183,12 +183,14 @@ myForm.addEventListener('submit', loadSubmit);
 
 function loadSubmit(e){
     e.preventDefault();
+    let timer;
     if(nameInput.value === "" || emailInput.value === ""){
+        clearTimeout(timer);
         msg.textContent = "Please enter Name and Email!";
         msg.style.backgroundColor="red";
         msg.style.color="white";
-        setTimeout(() => {
-            msg.remove();
+        timer = setTimeout(() => {
+            msg.textContent = '';
         }, 5000);
         return;
     }
