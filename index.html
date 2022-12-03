@@ -4,24 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Javascript | Fundamentals</title>
 </head>
 <body>
-    <form id="my-form">
-        <p class="msg"></p>
-        <div>
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" placeholder="Add name..."/>
-        </div>
-        <br>
-        <div>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Add Email..."/>
-        </div>
-        <br>
-        <input type="submit" value="Save" class="btn">
-    </form>
-    <ul id="users"></ul>
+    <header>
+        <h1>JS For Beginners</h1>
+    </header>
+  
+    <section class="container">
+        <form id="my-form">
+          <h1>Add User</h1>
+          <div class="msg"></div>
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input type="text" id="email">
+          </div>
+          <input class="btn" type="submit" value="Submit">
+        </form>
+  
+        <ul id="users"></ul>
+  
+        <ul class="items">
+         
+        </ul>
+    </section>
    <script src="main.js"></script> 
 </body>
 </html>

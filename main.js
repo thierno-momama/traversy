@@ -1,89 +1,78 @@
+// alert('Hello World');
 // mdn console
-console.log('Message Log');
-console.warn('Message Warn');
-console.error('Message Error');
-console.info('Message Infos');
-// les variables et leurs types 
-let name = "Thierno";
-let old= 30;
-let oldX = 30.11;
-let x = null;
-let y = undefined;
-let bool = true;
-console.log(`${typeof name} : ${name}`);
-console.log(`${typeof old} : ${old}`);
-console.log(`${typeof oldX} : ${oldX}`);
-console.log(`${typeof x} : ${x}`);
-console.log(`${typeof y} : ${y}`);
-console.log(`${bool} : ${bool}`);
-// les const
-const a = 10;
-console.log(`${a} : ${a}`);
-// les arrays 
-let ar = new Array(12, 23, true, "Pomme");
-console.log(`${ar} : ${ar}`);
-// other arrays
-let fruits = ["pomme", "jus", "orange"];
+console.log('Is an Log Message');
+console.warn('Is an Warn Message');
+console.info('Is an Infos Message');
+console.debug('Is an Debug Message');
+console.error('Is an Error Message');
+// String, Numbers, Boolean, Null, Undefined
+const name = 'Thierno';
+const age = 31;
+const rating = 4.5;
+const isCool = true;
+const x = null;
+const y = undefined;
+let z;
+// typeof 
+console.log(typeof name);
+console.log(typeof age);
+console.log(typeof rating);
+console.log(typeof isCool);
+console.log(typeof x);
+console.log(typeof y);
+console.log(typeof z);
+// cncatenation
+console.log('My name is '+name+' , and i am '+age+' years old');
+// Template String
+console.log(`Hello my name is : ${name} and i am ${age} years old`);
+// methode string
+const s = "Hello World";
+console.log(s.length);
+console.log(s.substring(0, 5));
+console.log(s.substring(0, 5).toUpperCase());
+const tech = "Technology, PC, Mobile";
+console.log(tech.split(', '));
+console.log(typeof tech.split(''));
+// Array Number
+const numbers = new Array(12, 90, 3, 7);
+console.log(typeof numbers);
+console.log(numbers);
+console.log(numbers[1]);
+// Array - multiples values
+const fruits = ["pomme", "orange", "jus", 12, true];
+console.log(typeof fruits);
 console.log(fruits);
-console.log(fruits.length);
-console.log(fruits.unshift("first"));
-console.log(fruits);
-fruits.push("last");
-console.log(fruits);
-console.log(fruits.reverse());
 console.log(fruits.indexOf("pomme"));
-// 
-console.log(name.length);
-// for, while, switch
-for(let i = 0; i < 10; i++ ){
-    console.log(`${i}`);
-}
-let j = 5;
-while(j > 0){
-    console.log("j:",j);
-    j--;
-}
-let color  = "red";
-switch(color){
-    case "red":
-        console.log(color); break;
-    case "yellow":
-        console.log(color); break;
-    default:
-        console.log("Inconnue");
-}
-// forEach, in, of
-for(let i in fruits){
-    console.log(fruits[i]);
-}
-for(let i of fruits){
-    console.log(i);
-}
-// 
-fruits.forEach((fruit) => {
-    console.log(fruit);
-});
+fruits.unshift("raisin");
+fruits.push("Monagos");
+console.log(fruits);
+fruits.pop();
+console.log(fruits);
+fruits.shift();
+console.log(fruits);
 // object
-let person = {
-    first: "Thierno",
-    last: "Momama",
-    old: 30,
-    hobbies: ["Prière", "Dev", "Sport"],
-    address: {
-        city: "Vitry",
-        dept: "Vald",
-        cp: 94400
-    }
+const person = {
+   firstName : 'Thierno',
+   lastName: 'Momama',
+   age: 31,
+   hobbies: ['Dieu', 'Dev', 'Music'],
+   address: {
+    city: 'Vitry-Sur-Seine',
+    dept: 'Val-De-Marne',
+    cp: 944000
+   } 
 }
-console.log(`${typeof person}`);
-const { first, last, hobbies, address: {city}} = person;
+console.log(typeof person);
 console.log(person);
-hobbies.forEach(function(i){
-    console.log(i);
-});
-
+console.log(person.hobbies[0]);
+console.log(person.address.city);
+const { firstName, lastName, hobbies, address: {city}} = person;
+console.log(firstName);
+console.log(hobbies);
 console.log(city);
-// map, filter, callbacks
+person.email = 'thierno-momama@gmail.com';
+console.log(person);
+// array object todos
 const todos = [
     {
         id: 1, 
@@ -92,112 +81,148 @@ const todos = [
     },
     {
         id: 2, 
-        name: "Todo Two",
+        name: "Todo One",
         isCompleted: false
     },
     {
         id: 3, 
-        name: "Todo Three",
+        name: "Todo Two",
         isCompleted: true
     }
 ];
+console.log(typeof todos);
 console.log(todos);
-todos.forEach((todo) => {
-    console.log(todo);
+// for of
+for(let todo of todos){
+    console.log(todo.name);
+}
+// for in
+for(let i in todos){
+    console.log(todos[i].isCompleted);
+}
+// for
+for(let i = 0; i < todos.length; i++){
+    console.log(todos[i]);
+}
+// forEach, map, filter
+todos.forEach(function(todo){
+    console.log("==>", todo);
 });
-const filtre = todos.filter(function(todo){
-    return todo.isCompleted === true;
-});
-console.log("---------------");
-
-filtre.forEach((todo) => {
-    console.log(todo);
-});
-
-const emps = todos.map((todo) => {
+let todosMap = todos.map((todo) => {
     return todo.name;
 });
-
-console.log(emps);
-
-const clbs = todos.filter((todo) => {
-    return todo.isCompleted === true; 
+console.log(todosMap);
+let todoFilter = todos.filter((todo) => {
+    return todo.isCompleted === true;
+});
+console.log(todoFilter);
+// callback filter map
+let todoCallback = todos.filter((todo) => {
+    return todo.isCompleted === true;
 }).map((todo) => {
     return todo.name;
 });
-console.log(clbs);
-// 
-function adSom(a, b){
-    console.log(a+b);
+console.log(todoCallback);
+todos.push({id: 4, name: "Todo Four", isCompleted: true});
+console.log(todos);
+// while, switch, terniaire
+let j = 10;
+while( j > 0){
+    j = j - 1;
+    console.log("---:", j);
 }
-adSom(4,3);
-adMon = (a,b) => {
+let k = 9;
+console.log(k < 10 ? "Petit" : "Grand");
+let color = "blue";
+switch(color){
+    case "blue" :
+        console.log(color); break;
+    case "red":
+        console.log(color);break;
+    case "yellow":
+        console.log(color);break;
+    default: 
+        console.log("Couleur de drapeau inconnue");
+}
+// funtion adSome
+function adSome(a, b){
     return a+b;
+}
+console.log(adSome(4, 5));
+let dSum = (a, b) => {
+    console.log(a+b);
 };
-console.log(adMon(5,6));
-// methode 
-function Person(firstName, lastName, oldName){
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this.oldName = new Date(oldName); 
+dSum(3,3);
+// function constructor
+function Person(firstname, lastname, dob){
+    this.firstname = firstname;
+    this.lastname = lastname;
+    this.dob = new Date(dob);
+    this.getBirthday = function(){
+        return this.dob.getFullYear();
+    };
 }
-Person.prototype.getOld = function() {
-    return this.oldName.getFullYear();
+Person.prototype.fullname = function(){
+    console.log(`${this.firstname} - ${this.lastname}`);
 }
-Person.prototype.fullName = function(){
-    return `${this.firstName} : ${this.lastName}`;
-}
-let person1 = new Person("Thierno", "Momama", "11-22-1991");
+// instantiation
+const person1 = new Person('Thierno', 'Momama', '11-22-1991');
+const person2 = new Person('KOO', 'DEV', '12-03-2022');
 console.log(person1);
-console.log(person1.getOld());
-console.log(person1.fullName());
-
-class Humain{
-    
-    constructor(firstName, lastName, oldName){
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.oldName = new Date(oldName);   
+console.log(person2);
+console.log(person1.getBirthday());
+person1.fullname();
+// 
+class Humain {
+    //constructor
+    constructor(firstname, lastname, dob){
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.dob = new Date(dob);
     }
-    getOld(){
-        return this.oldName.getFullYear();
+    getBirthday(){
+        return this.dob.getFullYear();
     }
-    fullName(){
-        return `${this.firstName} : ${this.lastName}`;
-
+    fullname(){
+        console.log(`${this.firstname} - ${this.lastname}`);
     }
-
 }
-
-const koodev = new Humain("KOO", "DEV", "11-11-2022");
-console.log(koodev);
-console.log(koodev.getOld());
-console.log(koodev.fullName());
+const human1 = new Humain('Thierno', 'Momama', '11-22-1991');
+const human2 = new Humain('KOO', 'DEV', '12-03-2022');
+console.log(human1);
+console.log(human2);
+console.log(human1.getBirthday());
+human1.fullname();
 // DOM
+console.log(window);
+// select form
 const myForm = document.querySelector('#my-form');
-const nameInput = document.getElementById('name');
-const emailInput = document.getElementById('email');
-const msg = document.querySelector(".msg");
-const users = document.querySelector('#users');
-myForm.addEventListener('submit', loadSubmit);
+const nameInput = document.querySelector('#name');
+const emailInput = document.querySelector('#email');
+const msg = document.querySelector('.msg');
+const userList = document.querySelector('#users');
+myForm.addEventListener('submit', onsubmit);
 
-function loadSubmit(e){
+function onsubmit(e) {
     e.preventDefault();
+
     let timer;
-    if(nameInput.value === "" || emailInput.value === ""){
+    if(nameInput.value === '' || emailInput.value === ''){
         clearTimeout(timer);
-        msg.textContent = "Please enter Name and Email!";
-        msg.style.backgroundColor="red";
-        msg.style.color="white";
+        msg.classList.add('error');
+        msg.innerHTML = 'Please enter all fields';
         timer = setTimeout(() => {
-            msg.textContent = '';
-        }, 5000);
-        return;
+            msg.innerHTML = ''; 
+        msg.classList.remove('error');
+
+        }, 3000);
+    }else{
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(`${nameInput.value} : ${emailInput.value}`));
+        userList.appendChild(li);
+        
+        // clear fields
+        nameInput.value = '';
+        emailInput.value = '';
     }
-    const li = document.createElement('li');
-    li.appendChild(document.createTextNode(`${nameInput.value} : ${emailInput.value}`));
-    users.appendChild(li);
-    // 
-    nameInput.value = '';
-    emailInput.value = '';
 }
