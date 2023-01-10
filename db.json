@@ -17,6 +17,12 @@
       "text": "Task One",
       "day": "3Th Task",
       "reminder": true
+    },
+    {
+      "text": "DATABASE SCHEMA",
+      "day": "SQDSQ",
+      "reminder": true,
+      "id": 4
     }
   ]
 }
